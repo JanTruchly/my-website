@@ -57,7 +57,9 @@
             <!-- SVG maska bude tady - vytvoříme v kroku 6 -->
             <defs>
               <clipPath id="circleMask">
-                <path fill="#FF0066" d="M33.6,-43.1C46,-37.1,60.4,-30.7,64.9,-20.3C69.3,-9.9,63.7,4.5,59.8,20.4C55.9,36.2,53.7,53.5,44,66.6C34.3,79.6,17.2,88.3,1.2,86.6C-14.7,84.9,-29.4,72.8,-45,61.7C-60.6,50.6,-77.1,40.5,-84.9,25.4C-92.8,10.4,-92,-9.6,-83.9,-25C-75.8,-40.4,-60.4,-51.2,-45.2,-56.3C-30,-61.4,-15,-60.8,-2.2,-57.7C10.5,-54.7,21.1,-49.1,33.6,-43.1Z" transform="translate(100 100)" />
+                <path fill="#FF0066"
+                  d="M33.6,-43.1C46,-37.1,60.4,-30.7,64.9,-20.3C69.3,-9.9,63.7,4.5,59.8,20.4C55.9,36.2,53.7,53.5,44,66.6C34.3,79.6,17.2,88.3,1.2,86.6C-14.7,84.9,-29.4,72.8,-45,61.7C-60.6,50.6,-77.1,40.5,-84.9,25.4C-92.8,10.4,-92,-9.6,-83.9,-25C-75.8,-40.4,-60.4,-51.2,-45.2,-56.3C-30,-61.4,-15,-60.8,-2.2,-57.7C10.5,-54.7,21.1,-49.1,33.6,-43.1Z"
+                  transform="translate(100 100)" />
               </clipPath>
             </defs>
             <image href="images/John.jpg" width="400" height="400" clip-path="url(#circleMask)" />
@@ -66,56 +68,280 @@
       </div>
     </div>
   </section>
-<section class="skills" id="skills">
-  <div class="container">
-    <h2 class="section-title">Moje Dovednosti</h2>
-    <p class="section-subtitle">Co umím a na čem pracuji</p>
-    
-    <div class="skills-grid">
-      
-      <!-- Kartička 1 -->
-      <div class="skill-card">
-        <div class="skill-icon">🎨</div>
-        <h3 class="skill-title">UI/UX Design</h3>
-        <p class="skill-description">Navrhuju intuitivní a krásná uživatelská rozhraní s ohledem na uživatele.</p>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Moje Dovednosti</h2>
+      <p class="section-subtitle">Co umím a na čem pracuji</p>
+
+      <div class="skills-grid">
+
+        <!-- Kartička 1 -->
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3 class="skill-title">UI/UX Design</h3>
+          <p class="skill-description">Navrhuju intuitivní a krásná uživatelská rozhraní s ohledem na uživatele.</p>
+        </div>
+
+        <!-- Kartička 2 -->
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3 class="skill-title">HTML & CSS</h3>
+          <p class="skill-description">Tvořím responzivní a sémantické webové stránky pomocí moderních technologií.</p>
+        </div>
+
+        <!-- Kartička 3 -->
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3 class="skill-title">JavaScript</h3>
+          <p class="skill-description">Programuji interaktivní prvky a logiku pomocí vanilla JS nebo framework.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💭</div>
+          <h3 class="skill-title">Hard working</h3>
+          <p class="skill-description">I work hard as an mule</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💭</div>
+          <h3 class="skill-title">Inspirational quote</h3>
+          <p class="skill-description">"There is no one who loves pain itself, who seeks after it and wants to have it,
+            simply because it is pain..."</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💭</div>
+          <h3 class="skill-title">Inspirational quote</h3>
+          <p class="skill-description">"Believe you can and you're halfway there."</p>
+        </div>
+       
+
+      </section>
+
+    <!-- Grid s projekty -->
+      <section class="portfolio" id="works">
+          <div class="container">
+            <h2 class="section-title">Moje Projekty</h2>
+            <p class="section-subtitle">Ukázka mých nejlepších prací</p>
+
+            <!-- Filtrovací tlačítka -->
+            <div class="portfolio-filters">
+              <button class="filter-btn active" data-filter="all">Vše</button>
+              <button class="filter-btn" data-filter="web">Web Design</button>
+              <button class="filter-btn" data-filter="app">Aplikace</button>
+              <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+
+
+          </div>
       </div>
-      
-      <!-- Kartička 2 -->
-      <div class="skill-card">
-        <div class="skill-icon">💻</div>
-        <h3 class="skill-title">HTML & CSS</h3>
-        <p class="skill-description">Tvořím responzivní a sémantické webové stránky pomocí moderních technologií.</p>
-      </div>
-      
-      <!-- Kartička 3 -->
-      <div class="skill-card">
-        <div class="skill-icon">⚙️</div>
-        <h3 class="skill-title">JavaScript</h3>
-        <p class="skill-description">Programuji interaktivní prvky a logiku pomocí vanilla JS nebo framework.</p>
+  </section>
+    <div class="portfolio-grid">
+
+      <!-- Projekt 1 -->
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-image">
+          <img src="./images/DASH_BOARD.jpg" alt="E-commerce Web" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Dashboard</h3>
+            <p class="portfolio-description">Personal dashboard</p>
+            <div class="portfolio-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://jantruchly.github.io/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/JanTruchly/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">💭</div>
-        <h3 class="skill-title">Hard working</h3>
-        <p class="skill-description">I work hard as an mule</p>
+      <!-- Projekt 1 -->
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-image">
+          <img src="./images/DASH_BOARD.jpg" alt="E-commerce Web" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Dashboard</h3>
+            <p class="portfolio-description">Personal dashboard</p>
+            <div class="portfolio-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://jantruchly.github.io/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/JanTruchly/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projekt 1 -->
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-image">
+          <img src="./images/DASH_BOARD.jpg" alt="E-commerce Web" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Dashboard</h3>
+            <p class="portfolio-description">Personal dashboard</p>
+            <div class="portfolio-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://jantruchly.github.io/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/JanTruchly/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projekt 1 -->
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-image">
+          <img src="./images/DASH_BOARD.jpg" alt="E-commerce Web" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Dashboard</h3>
+            <p class="portfolio-description">Personal dashboard</p>
+            <div class="portfolio-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://jantruchly.github.io/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/JanTruchly/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projekt 1 -->
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-image">
+          <img src="./images/DASH_BOARD.jpg" alt="E-commerce Web" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Dashboard</h3>
+            <p class="portfolio-description">Personal dashboard</p>
+            <div class="portfolio-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://jantruchly.github.io/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/JanTruchly/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projekt 1 -->
+      <div class="portfolio-card" data-category="web">
+        <div class="portfolio-image">
+          <img src="./images/DASH_BOARD.jpg" alt="E-commerce Web" loading="lazy">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Dashboard</h3>
+            <p class="portfolio-description">Personal dashboard</p>
+            <div class="portfolio-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://jantruchly.github.io/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/JanTruchly/dashboard/" class="portfolio-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">💭</div>
-        <h3 class="skill-title">Inspirational quote</h3>
-        <p class="skill-description">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">💭</div>
-        <h3 class="skill-title">Inspirational quote</h3>
-        <p class="skill-description">"Believe you can and you're halfway there."</p>
-      </div>
-      
-    </div>
-  </div>
-</section>
+  </section>
   <script src="script.js"></script>
+
 </body>
 
 </html>
