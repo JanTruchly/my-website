@@ -880,3 +880,115 @@ body {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
+
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background-color: #1e293b;
+  border-top: 1px solid #334155;
+  color: #f8fafc;
+  padding: 4rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--primary), var(--legend));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.social-link:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.scroll-top {
+  margin-top: 1rem;
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 2px solid #475569;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.scroll-top:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  color: #ffffff;
+}
+
+/* Responzivita pro desktop */
+@media (min-width: 900px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    flex: 1;
+    text-align: left;
+  }
+
+  .social-links {
+    flex: 2;
+    justify-content: center;
+  }
+
+  .copyright {
+    flex: 1;
+    text-align: right;
+  }
+
+  .scroll-top {
+    flex-basis: 100%;
+    text-align: center;
+    width: fit-content;
+    margin: 1rem auto 0;
+  }
+}
