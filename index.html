@@ -137,6 +137,7 @@
           </div>
       </div>
   </section>
+  
     <div class="portfolio-grid">
 
       <!-- Projekt 1 -->
@@ -340,8 +341,119 @@
       </div>
 
   </section>
-  <script src="script.js"></script>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">Jméno Příjmení</div>
 
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+      </div>
+
+      <p class="copyright">© 2024 Všechna práva vyhrazena.</p>
+
+      <a href="#home" class="scroll-top">Nahoru ↑</a>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+<!-- Modal okno -->
+<div class="modal" id="project-modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div class="modal-body">
+      <img src="" alt="Project Detail" id="modal-image">
+      <div class="modal-info">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <div id="modal-tags"></div>
+        <div id="modal-links"></div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Napište mě</h2>
+    <p class="section-subtitle">Máte dotaz nebo nabídku spolupráce?</p>
+    <div class="contact-grid">
+  <!-- Levá část: Kontaktní údaje -->
+  <div class="contact-info">
+    <div class="contact-item">
+      <div class="contact-icon">📧</div>
+      <div class="contact-text">
+        <h4>Email</h4>
+        <p><a href="mailto:jan.truchly@academicschool.cz">jan.truchly@academicschool.cz</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">📱</div>
+      <div class="contact-text">
+        <h4>Telefon</h4>
+        <p><a href="tel:+420123456789">+420 123 456 789</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">📱</div>
+      <div class="contact-text">
+        <h4>GitHub</h4>
+        <p><a href="https://github.com/JanTruchly/dashboard">GitHub</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <div class="contact-text">
+        <h4>Adresa</h4>
+        <p>Praha, Česká republika</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!-- Pravá část: Formulář -->
+<form class="contact-form">
+  <div class="form-group">
+    <label for="name">Jméno</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Vaše jméno"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="vás@email.cz"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Zpráva</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Napište mi zprávu..."
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
+</form>
+</section>
 
 </html>
